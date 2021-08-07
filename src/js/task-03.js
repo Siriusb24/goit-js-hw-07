@@ -14,11 +14,10 @@ const images = [
 ];
 
 const galleryList = document.getElementById('gallery')
+galleryList.classList.add('list')
 
 const createGallery = ({url, alt}) => {
- const galleryEl = document.createElement('li')
- 
- galleryList.insertAdjacentHTML('beforeEnd', `<li><img src="${url}" alt="${alt}"></li>`)
+ galleryList.insertAdjacentHTML('beforeEnd', `<li><img class = "list__item" src="${url}" alt="${alt}"></li>`)
 
  return galleryList
 }

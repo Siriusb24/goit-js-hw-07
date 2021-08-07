@@ -1,0 +1,16 @@
+.list{
+    padding: 40px, 40px;
+    background-color: rgb(74, 104, 73);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.list__item{
+    margin-right: 25px;
+    width: 320px;
+    height: 240px;
+}
+
