@@ -14,22 +14,17 @@ const images = [
 ];
 
 const galleryList = document.getElementById('gallery')
-console.log(galleryList)
 
 const createGallery = ({url, alt}) => {
  const galleryEl = document.createElement('li')
- const galleryImg = document.createElement('img')
- const link = url
- const discripe = alt
- galleryImg.src = link
- galleryImg.alt = discripe
- galleryEl.append(galleryImg)
- galleryList.append(galleryEl)
+ 
+ galleryList.insertAdjacentHTML('beforeEnd', `<li><img src="${url}" alt="${alt}"></li>`)
 
  return galleryList
 }
 
 const allGallery = images.map(createGallery)
+console.log(galleryList)
 
 
 
