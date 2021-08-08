@@ -1,7 +1,6 @@
 const validator = document.querySelector('[type = text]')
-console.log(validator)
 
-validator.addEventListener("blur", (event) => {
+validator.addEventListener("blur", () => {
   if(validator.getAttribute('data-length') > validator.value.length || validator.getAttribute('data-length') < validator.value.length ){
   validator.classList.add('invalid')
   validator.classList.remove('valid')
